@@ -1,0 +1,54 @@
+.container {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.1fr 0.9fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "title"
+    "Sounds"; 
+  width: 375px; 
+  height: 667px; 
+}
+.title { grid-area: title; 
+       text-align: center;
+       padding-top: 20px;
+       font-size: 30px;
+       }
+.Sounds {
+  
+  display: grid; 
+  grid-template-columns: 1.5fr 1.5fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Forest Swamp"
+    "Road Cavern"
+    "Battle Evil"; 
+  grid-area: Sounds; 
+}
+.Forest { grid-area: Forest; 
+
+        text-align: center
+        }
+.Swamp { grid-area: Swamp;
+
+        text-align: center}
+.Road { grid-area: Road; 
+
+        text-align: center}
+.Cavern { grid-area: Cavern; 
+
+        text-align: center}
+.Battle { grid-area: Battle; 
+
+        text-align: center}
+.Evil { grid-area: Evil; 
+
+        text-align: center}
+img{
+  margin-top:11%;
+  border-radius: 50%;
+  border: solid 5px white;
+}
+
